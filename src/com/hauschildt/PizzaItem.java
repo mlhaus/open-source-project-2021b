@@ -18,6 +18,10 @@ public enum PizzaItem {
             Crust.ORIGINAL, Sauce.MARINARA, new Meat[]{Meat.PEPPERONI, Meat.CANADIAN_BACON,
             Meat.SAUSAGE}, new Veggie[]{Veggie.ONION, Veggie.GREEN_PEPPER, Veggie.MUSHROOM,
             Veggie.BLACK_OLIVE})
+    ,CHICKEN_ALFREDO("Chicken Alfredo", 19.99, "Creamy alfredo sauce, " +
+            "topped with juicy diced chicken breast, smothered in mozzarella cheese.", Size.LARGE,
+            Crust.ORIGINAL, Sauce.ALFREDO, new Meat[]{Meat.CHICKEN }, new Veggie[]{Veggie.BLACK_OLIVE,
+            Veggie.MUSHROOM})
     ;
 
     private Pizza item;
