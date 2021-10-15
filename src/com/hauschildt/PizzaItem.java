@@ -18,6 +18,9 @@ public enum PizzaItem {
             Crust.ORIGINAL, Sauce.MARINARA, new Meat[]{Meat.PEPPERONI, Meat.CANADIAN_BACON,
             Meat.SAUSAGE}, new Veggie[]{Veggie.ONION, Veggie.GREEN_PEPPER, Veggie.MUSHROOM,
             Veggie.BLACK_OLIVE})
+    ,ORIGINAL_PAN("Original Pan Pizza", 8.99, "Golden baked crust baked to perfection",
+            Size.MEDIUM, Crust.PAN, Sauce.MARINARA, new Meat[]{Meat.HAM, Meat.BACON},
+            new Veggie[]{Veggie.ONION})
     ;
 
     private Pizza item;
