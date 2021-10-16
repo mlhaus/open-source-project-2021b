@@ -4,6 +4,7 @@ public enum Crust {
     ORIGINAL("Original Crust")
     ,THIN("Thin Crust")
     ,STUFFED("Stuffed Crust")
+    ,PAN("Pan Crust")
     ;
 
     String description;

@@ -21,6 +21,9 @@ public enum PizzaItem {
     , STUFFED_CRUST_CHEESE_PIZZA("Stuffed Crust Pizza", 14.79, "No confusion here. " +
             "Signature cheese pizza with a filled crust cooked to a perfection.", Size.LARGE, Crust.STUFFED,
             Sauce.MARINARA, new Meat[]{}, new Veggie[]{})
+    ,ORIGINAL_PAN("Original Pan Pizza", 8.99, "Golden baked crust baked to perfection",
+            Size.MEDIUM, Crust.PAN, Sauce.MARINARA, new Meat[]{Meat.HAM, Meat.BACON},
+            new Veggie[]{Veggie.ONION})
     ;
 
     private Pizza item;
