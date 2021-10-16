@@ -18,6 +18,11 @@ public enum PizzaItem {
             Crust.ORIGINAL, Sauce.MARINARA, new Meat[]{Meat.PEPPERONI, Meat.CANADIAN_BACON,
             Meat.SAUSAGE}, new Veggie[]{Veggie.ONION, Veggie.GREEN_PEPPER, Veggie.MUSHROOM,
             Veggie.BLACK_OLIVE})
+    ,BBQ_CHICKEN("BBQ Chicken Pizza", 18.99, "Our delicious BBQ sauce, " +
+            "Chicken, Bacon, and fresh-cut Onions to tie the flavors together.",
+            Size.LARGE, Crust.ORIGINAL, Sauce.BBQ,
+            new Meat[]{Meat.CHICKEN, Meat.BACON},
+            new Veggie[]{Veggie.ONION} )
     ,CHICKEN_ALFREDO("Chicken Alfredo", 19.99, "Creamy alfredo sauce, " +
             "topped with juicy diced chicken breast, smothered in mozzarella cheese.", Size.LARGE,
             Crust.ORIGINAL, Sauce.ALFREDO, new Meat[]{Meat.CHICKEN }, new Veggie[]{Veggie.BLACK_OLIVE,
