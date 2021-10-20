@@ -9,12 +9,14 @@ public class Main {
         order.addItem(PizzaItem.PEPPERONI.getItem());
         order.addItem(PizzaItem.THE_WORKS.getItem());
         order.addItem(PizzaItem.CHICKEN_ALFREDO.getItem());
+        order.addItem(PizzaItem.BUFFALO_CHICKEN.getItem());
 
         System.out.println(order.getNumberOfItems());
         System.out.println(order.getItem(0).getName());
         System.out.println(order.getItem(1).getName());
         System.out.println(order.getItem(2).getName());
         System.out.println(order.getItem(3).getName());
+        System.out.println(order.getItem(4).getName());
 
     }
 }
