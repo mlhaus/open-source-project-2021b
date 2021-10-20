@@ -33,7 +33,7 @@ public enum PizzaItem {
     ,ORIGINAL_PAN("Original Pan Pizza", 8.99, "Golden baked crust baked to perfection",
             Size.MEDIUM, Crust.PAN, Sauce.MARINARA, new Meat[]{Meat.HAM, Meat.BACON},
             new Veggie[]{Veggie.ONION})
-    ,BUFFALO_CHICKEN("Buffalo Chicken", 17.99, "Grilled chicken with topped with buffalo sauce",
+    ,BUFFALO_CHICKEN("Buffalo Chicken Pizza", 17.99, "Grilled chicken with topped with buffalo sauce",
             Size.LARGE, Crust.ORIGINAL, Sauce.MARINARA, new Meat[]{Meat.CHICKEN},
             new Veggie[]{})
     ;
