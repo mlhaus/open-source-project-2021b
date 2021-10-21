@@ -55,12 +55,15 @@ class PizzaTest {
 
     @Test
     void getCrust() {
-        fail();
+        Crust expected = Pizza.DEFAULT_CRUST;
+        assertEquals(expected, pizza.getCrust());
     }
 
     @Test
     void setCrust() {
-        fail();
+        Crust expected = Crust.THIN;
+        pizza.setCrust(expected);
+        assertEquals(expected, pizza.getCrust());
     }
 
     @Test
