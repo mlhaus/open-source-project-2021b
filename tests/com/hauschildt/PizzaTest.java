@@ -3,6 +3,8 @@ package com.hauschildt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PizzaTest {
@@ -95,6 +97,16 @@ class PizzaTest {
 
     @Test
     void testToString() {
-        fail();
+        String expected = "Pizza{" +
+                "name='" + MenuItem.DEFAULT_NAME + '\'' +
+                ", price=" + MenuItem.DEFAULT_PRICE +
+                ", description='" + MenuItem.DEFAULT_DESCRIPTION + '\'' +
+                ", size=" + Pizza.DEFAULT_SIZE +
+                ", crust=" + Pizza.DEFAULT_CRUST +
+                ", sauce=" + Pizza.DEFAULT_SAUCE +
+                ", meat=" + Arrays.toString(Pizza.DEFAULT_MEAT) +
+                ", veggies=" + Arrays.toString(Pizza.DEFAULT_VEGGIE) +
+                '}';
+        assertEquals(expected, pizza.toString());
     }
 }
