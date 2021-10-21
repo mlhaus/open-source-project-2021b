@@ -12,5 +12,8 @@ public enum Size {
     Size(String description){
         this.description = description;
     }
+
+    public class Medium {
+    }
 }
 

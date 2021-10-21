@@ -16,6 +16,7 @@ public class Pizza extends MenuItem {
         this.sauce = sauce;
         this.meat = meat;
         this.veggies = veggies;
+
     }
 
     public Size getSize() {

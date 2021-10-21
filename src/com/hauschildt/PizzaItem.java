@@ -18,7 +18,19 @@ public enum PizzaItem {
             Crust.ORIGINAL, Sauce.MARINARA, new Meat[]{Meat.PEPPERONI, Meat.CANADIAN_BACON,
             Meat.SAUSAGE}, new Veggie[]{Veggie.ONION, Veggie.GREEN_PEPPER, Veggie.MUSHROOM,
             Veggie.BLACK_OLIVE})
-    ;
+
+    ,OWNPIZZA("Mujahid  Pizza",
+                    14.50,
+                    "Your choice of crust covered " +
+                            "with our signature pizza sauce, real mozzarella cheese, and pepperoni. It's one " +
+                            "of our most popular pizzas.",
+                    Size.MEDIUM,
+                    Crust.ORIGINAL,
+                    Sauce.MARINARA,
+                    new Meat[]{Meat.PEPPERONI},
+                    new Veggie[]{}
+    );
+
 
     private Pizza item;
 
