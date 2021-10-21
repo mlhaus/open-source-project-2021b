@@ -57,12 +57,17 @@ class PizzaTest {
 
     @Test
     void getSize() {
-        fail();
+        Size actualSize = pizza.getSize();
+        Size expectedSize = Pizza.DEFAULT_SIZE;
+        assertEquals(expectedSize, actualSize);
     }
 
     @Test
     void setSize() {
-        fail();
+        Size expected = Pizza.DEFAULT_SIZE;
+        pizza.setSize(expected);
+        Size actual = pizza.getSize();
+        assertEquals(expected, actual);
     }
 
     @Test
