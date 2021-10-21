@@ -27,12 +27,14 @@ class PizzaTest {
 
     @Test
     void getPrice() {
-        fail();
+        assertEquals(Pizza.DEFAULT_PRICE, pizza.getPrice());
     }
 
     @Test
     void setPrice() {
-        fail();
+        int newPrice = 0;
+        pizza.setPrice(newPrice);
+        assertEquals(newPrice, pizza.getPrice());
     }
 
     @Test
