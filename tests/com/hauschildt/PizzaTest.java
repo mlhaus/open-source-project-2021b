@@ -85,12 +85,16 @@ class PizzaTest {
 
     @Test
     void getVeggies() {
-        fail();
+        assertEquals(pizza.DEFAULT_VEGGIE, pizza.getVeggies());
     }
 
     @Test
     void setVeggies() {
-        fail();
+        pizza.setVeggies(Pizza.DEFAULT_VEGGIE);
+
+        Veggie[] expectedResult = pizza.DEFAULT_VEGGIE;
+        Veggie[] actualResult = pizza.getVeggies();
+        assertEquals(expectedResult, actualResult);
     }
 
     @Test
