@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PizzaTest {
+    //instance variable for the pizza object
     private Pizza pizza;
 
     @BeforeEach
@@ -15,12 +16,19 @@ class PizzaTest {
 
     @Test
     void getName() {
-        fail();
+        String expected = Pizza.DEFAULT_NAME;
+        String actual = pizza.getName();
+        assertEquals(expected, actual);
+
     }
 
     @Test
     void setName() {
-        fail();
+        String expected = Pizza.DEFAULT_NAME;
+        pizza.setName(expected);
+        String actual = pizza.getName();
+        assertTrue(expected.equals(actual));
+
     }
 
     @Test
