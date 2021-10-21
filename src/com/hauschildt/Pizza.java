@@ -9,6 +9,17 @@ public class Pizza extends MenuItem {
     private Meat[] meat;
     private Veggie[] veggies;
 
+    public static final Size DEFAULT_SIZE = Size.LARGE;
+    public static final Crust DEFAULT_CRUST = Crust.ORIGINAL;
+    public static final Sauce DEFAULT_SAUCE = Sauce.MARINARA;
+    public static final Meat[] DEFAULT_MEAT = new Meat[]{};
+    public static final Veggie[] DEFAULT_VEGGIE = new Veggie[]{};
+
+    public Pizza() {
+        this(MenuItem.DEFAULT_NAME, MenuItem.DEFAULT_PRICE, MenuItem.DEFAULT_DESCRIPTION,
+                DEFAULT_SIZE, DEFAULT_CRUST, DEFAULT_SAUCE, DEFAULT_MEAT, DEFAULT_VEGGIE);
+    }
+
     public Pizza(String name, double price, String description, Size size, Crust crust, Sauce sauce, Meat[] meat, Veggie[] veggies) {
         super(name, price, description);
         this.size = size;
