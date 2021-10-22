@@ -41,7 +41,7 @@ class PizzaTest {
     }
 
     @Test
-      void setDescription() {
+      void setDescriptionGood() {
         String  expected = "MG";
         pizza.setDescription(expected);
         String actual = pizza.getDescription();
