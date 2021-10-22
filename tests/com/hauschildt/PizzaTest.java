@@ -85,12 +85,19 @@ class PizzaTest {
 
     @Test
     void getSauce() {
-        fail();
+        Sauce expected = Pizza.DEFAULT_SAUCE;
+        assertEquals(expected, pizza.getSauce());
+
+
+
     }
 
     @Test
     void setSauce() {
-        fail();
+        Sauce expected = Sauce.BBQ;
+        pizza.setSauce(expected);
+        assertEquals(expected, pizza.getSauce());
+
     }
 
     @Test
