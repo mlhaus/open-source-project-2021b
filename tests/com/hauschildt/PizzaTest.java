@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class PizzaTest {
     private Pizza pizza;
 
@@ -33,14 +34,18 @@ class PizzaTest {
         fail();
     }
 
+
     @Test
     void getDescription() {
-        fail();
+        assertEquals(Pizza.DEFAULT_DESCRIPTION, pizza.getDescription());
     }
 
     @Test
-    void setDescription() {
-        fail();
+      void setDescription() {
+        String  expected = "MG";
+        pizza.setDescription(expected);
+        String actual = pizza.getDescription();
+        assertTrue(expected.equals(actual));
     }
 
     @Test
